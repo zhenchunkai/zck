@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Document</title> 
+  <style type="text/css"> 
+   div{ 
+    display: inline-block;/*行内盒子*/ 
+    border:2px solid gray; 
+   } 
+   .perspective{ 
+    perspective: 200px; /*透视属性*/ 
+   } 
+   .div1{  
+    width: 100px; 
+    height: 100px; 
+    border:1px solid black; 
+    background-color: pink; 
+    transform: rotateX(45deg); 
+    -webkit-transform: rotateX(45deg); 
+   } 
+   .div2{ 
+    width: 100px; 
+    height: 100px; 
+    border:1px solid black; 
+    background-color: lightblue; 
+    transform: rotateX(45deg); /*X轴旋转45度*/ 
+    -webkit-transform: rotateX(45deg); 
+   } 
+  </style> 
+</head> 
+<body> 
+  <!-- 不设置透视效果 --> 
+  <div class="wrap"> 
+   <div class="div1"></div> 
+  </div> 
+  <!-- 在本身元素上设置透视无效果 --> 
+  <div class="wrap"> 
+   <div class="div1 perspective"></div> 
+  </div> 
+  <!-- 在父级元素上设置透视有效果 --> 
+  <div class="wrap perspective"> 
+   <div class="div2"></div> 
+  </div> 
+</body> 
+</html> 
