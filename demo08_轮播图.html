@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+
+            }
+            ul,li{
+                list-style: none;
+            }
+
+            .floatfix::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .slider-container{
+                width: 100%;
+                position: relative;
+            }
+            .slider-item + .slider-item{
+                opacity: 0;
+            }
+            .slider-item{
+                width: 100%;
+                position: absolute;
+                animation-timing-function: linear;
+                animation-name: fade;
+                animation-iteration-count: infinite;
+                background-size: 100%;
+
+            }
+            .focus-container{
+                position: absolute;
+                z-index: 7;
+                margin: 0 auto;
+                left: 0;
+                right: 0%;
+            }
+
+            .focus-container li{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                float: left;
+                margin-right: 10px;
+                background: #fff;
+            }
+
+            .focus-item{
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                animation-timing-function: linear;
+                animation-name: fade;
+                animation-iteration-count: infinite;
+            }
+            .focus-item2,.focus-item3,.foucs-item4,.focus-item5{
+                opacity: 0;
+            }
+            .focus-container ul{
+                margin-left: 46%;
+            }
+            .focus-container{
+                bottom:2%;
+            }
+            .focus-item{
+                background: #51b1d9;
+            }
+            .slider-item,.focus-item{
+                animation-duration: 20s;
+            }
+            .slider-item1,.focus-item1{
+                animation-delay: -1s;
+            }
+            .slider-item1,.focus-item2{
+                animation-delay: 3s;
+            }
+            .slider-item1,.focus-item3{
+                animation-delay: 7s;
+            }
+            .slider-item1,.focus-item4{
+                animation-delay: 11s;
+            }
+            .slider-item1,.focus-item5{
+                animation-delay: 15s;
+            }
+
+            @keyframes fade{
+                0%{
+                    opacity: 0;
+                    z-index: 2;
+                }
+                5%{
+                    opacity: 1;
+                    z-index: 1;
+                }
+                20%{
+                    opacity: 1;
+                    z-index: 1;
+                }
+                25%{
+                    opacity: 0;
+                    z-index: 2;
+                }
+                100%{
+                    opacity: 0;
+                    z-index: 0;
+                }
+            }
+
+            .slider-item1{
+                background-image: url("images/liuyifei1.jpg");
+            }
+            .slider-item2{
+                background-image: url("images/liuyifei2.jpg");
+            }
+            .slider-item3{
+                background-image: url("images/liuyifei3.jpg");
+            }
+            .slider-item4{
+                background-image: url("images/liuyifei4.jpg");
+            }
+            .slider-item5{
+                background-image: url("images/liuyifei5.jpg");
+            }
+            .slider,.slider-item{
+                padding-bottom: 40%;
+            }
+
+
+
+        </style>
+    </head>
+
+
+
+    <body>
+        <section class="slider-container">
+            <ul class="slider">
+                <li class="slider-item slider-item1"></li>
+                <li class="slider-item slider-item2"></li>
+                <li class="slider-item slider-item3"></li>
+                <li class="slider-item slider-item4"></li>
+                <li class="slider-item slider-item5"></li>
+            </ul>
+
+            <div class="focus-container">
+                <ul class="floatfix">
+                    <li> <div class="focus-item focus-item1"></div></li>
+                    <li> <div class="focus-item focus-item2"></div></li>
+                    <li> <div class="focus-item focus-item3"></div></li>
+                    <li> <div class="focus-item focus-item4"></div></li>
+                    <li> <div class="focus-item focus-item5"></div></li>
+                </ul>
+            </div>
+            
+        </section>
+
+
+    </body>
+
+</html>
