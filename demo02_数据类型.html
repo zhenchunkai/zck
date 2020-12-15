@@ -1,0 +1,59 @@
+<html>
+    <head>
+
+        <script>
+
+            /* 
+                String类型
+            */
+            var name="Tony";    // 双引号用来修饰字符串
+            // alert(name);
+            console.log(name);           //Tony
+            console.log(typeof(name));   //String
+
+            var yiTianName='张无忌';       // 单引号也可以用来修饰字符串
+            console.log(yiTianName);      // 张无忌
+            console.log(typeof(yiTianName)); //String
+
+            var yiTianStory= " '张无忌' 与 '敏敏特穆尔' 的故事 ";
+            console.log(yiTianStory);
+            console.log(yiTianName,yiTianStory);   // 用，隔开两个不同的变量，同时打印
+
+
+            var whoImI="I'm a bad boy. \n So what? ";  // \n 换行
+            console.log(whoImI);
+
+
+            /* 
+                Number类型
+            */
+            var age=18;
+            var height=180.55;
+            var sight=0.112321312321;
+            var IQ = -180;
+            var EQ = +180;
+            var faLiang=99E8;   //科学计数法  99*10^8
+
+            console.log(age,height,sight,IQ,EQ,faLiang);
+            console.log(typeof(age),typeof(height),typeof(sight),typeof(IQ),typeof(EQ),typeof(faLiang));
+
+            // NaN  not a number  
+            var reslut = 10/0;
+            console.log(reslut);  //Infinity  正无穷大
+            console.log(isNaN(1));   //false      是一个数字
+            console.log(isNaN("hahah")); //true   不是数字
+            console.log(isNaN('111'))   //false   会自动识别  把'111'识别为数字
+
+
+
+
+        </script>
+    </head>
+
+
+    <body>
+        
+
+    </body>
+
+</html>
