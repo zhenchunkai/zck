@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+        <script>
+
+            /* 
+                1    1      等于    恒等于   
+                1    2      不等于  不恒等于
+                '1' '1'     等于    恒等于
+                "1"  "1"    等于    恒等于
+                '1'  "1"    等于    恒等于
+                1    "1"    等于    不恒等于
+                1    '1'    等于    不恒等于
+            
+            */
+            // 1 ==  等于
+            console.log(1==1)  // true
+            console.log(1==2)  //false
+            console.log(1 == "1" );  // true
+
+            // 2 ===  恒等于
+            console.log(1 === 1);    //true
+            console.log(1 === "1");  //false   
+            console.log(1 ==='1');   //false
+            console.log("1"==="1");  //true
+            console.log('1'==='1');  //true
+            console.log('1' === "1"); //true
+            // 3 != 不等于
+            console.log(1 != 1);     //false
+            console.log(1 != '1');   // false
+            console.log(1 != "1");   // false
+            console.log('1' != "1"); // false
+            // 4 !==  不恒等于
+            console.log(1  !== 1);    //false
+            console.log(1  !== "1");  //true
+            console.log(1  !=='1');   //true
+            console.log("1"!=="1");   //false
+            console.log('1'!=='1');   //false
+            console.log('1'!== "1");  //false
+            // 5 >    >=
+            console.log(1>1);   // false
+            console.log(1>=1);  // true
+            // 6 <    <=
+            console.log(1<1);  //false
+            console.log(1<=1); //true
+            // 例外
+            console.log(0.1+0.2);  // 0.30000000000000004
+            console.log( (0.1+0.2) == 0.3 );  // false
+
+
+        </script>
+    </head>
+    <body>
+        
+
+    </body>
+</html>
