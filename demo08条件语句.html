@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <script>
+            function chekAge(){
+                // 1.获取年龄
+                var ageLine=document.getElementById("age");
+           
+               
+              /*   ageLine=<input type="text" id="age"/>
+                    ageLine,value = 18(String);
+                    parseInt(ageLine.value) =18(int)
+                */
+              
+                var age = parseInt(ageLine.value);
+                // 2.判断年龄
+              /*   if(age < 18 ){
+                    alert("滚蛋");
+                }
+                    else{
+                        alert("欢迎光临");
+                    } */
+
+        if(age <18 && age> 6 ){
+                        alert("小学生走开");
+                    }
+                    else if(age >-18 && age <-30){
+                        alert("lol");
+
+                    }
+                    else if(age >=30 && age <= 40){
+                        alert("一刀999");
+                    }
+                    else if(age >40 && age <= 100);{
+                        alert("歇着");
+                    }
+                   else{
+                       alert("拜拜来你");
+                   }
+              /* 
+                    var ageRank= parseInt (age/10);//将bumber 类型的结果转换为int类型
+                    switch(ageRank){
+                        case 1:
+                        console.log("你是十几岁的人");
+                        break; // 中断当前的结构
+                        
+                        case 2:
+                        console.log("你是二十几岁的人"); 
+                        break;
+                        case 3:
+                        console.log("你是三十几岁的人"); 
+                        break;
+                        case 3:
+                        console.log("你是四十几岁的人");
+                        break; // 最后一个可写可不写，结构已完成
+                    } */ 
+            }
+
+
+
+
+
+        </script>
+
+
+
+    </head>
+
+    <body>
+        <p>
+            检查你是否可以在上网
+
+        </p>
+        <label>请输入你的年龄</label>
+        <input type="text" id="age"/>
+        <button onclick="chekAge()">成年了吗</button>
+
+    </body>
+
+
+
+
+
+</html>

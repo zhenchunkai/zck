@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <script>
+
+            /* 
+                for
+                1. var i=1 初始值
+                2. 判断 i<=100 循环条件，满足条件才可以进入循环
+                3. 执行循环体 decument.write(i+"<br/>")
+                4. 执行i++,循环修正条件
+                5....234 重复 ...
+                6. 当i为101时退出循环
+            
+             */
+            for (var i=1; i<100; i++){
+                document.write(i+"<br/>");
+            }
+
+            /* 
+                中间条件不写，死循环，占据大量内存
+             */
+
+            for (var i=1;i++){
+                document.write(i+"br/>");
+            }
+            var i=1;
+            for(i<100;i++){
+                document.write(i+"<br/>");
+                
+            }
+
+            var i=0;
+            for(; ;){
+                if(i==100){
+                    break;
+
+
+                }
+                document.write(i="<br/>");
+
+            }
+            for(var i=0; i<100; i++){   //使用var定义的i 虽然在循环内部，但是外部依旧可以访问
+                console.log(i);
+
+            }
+            console.log(i); // 100
+            for(let j=0; j<100; j++){  //使用let定义的变量j， j的作用范围在for循环之内，超出不起作用
+                console.log(j);  //j is not defined   j没有被定义
+            }
+
+            for(var i =1; i<100; i+=2){  //每次修正的条件2为步长
+                console.log(i);
+            }
+
+            for (var i =1; i<100; i++){
+              
+
+                if(i %7 ==0){
+                    console.log("我跳了"+i);
+                    continue;  // 跳过当前的一轮循环，继续后面的循环
+                    break;  // 终端整个循环，后面的循环不在继续
+
+                }
+                console.log(i);
+            }
+
+
+
+        </script>
+
+
+
+    </head>
+    <body>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
