@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>    
+        /* 
+            截取 切片
+            slice(start ,end)  原数组不发生任何变化
+        
+         */
+
+
+        var array01= new Array (12,23,3251,45,87,6,);
+        let array02= array01.slice(1); // 只写一个参数时开始位置一直截取到数组的尾部
+        console.log("原数组"+array01);
+        console.log("截取后的数组"+array02);
+            let array03=array01.slice(2,5); // 包含起始位置，不包含结束位置{2,5)下标从0开始
+            console.log(array03);
+            
+            /* 
+                splice (添加元素的起始位置，要删除旧数组中元素个数，要添加新元素)
+                在原数组之上进行操作，原数组不受任何影响，添加之后的结果就体现在原数组之上
+                用新数组接受处理结果，新数组为删除元素
+            
+             */
+            var array04 = new Array (12,12,4,5456,78,);
+            array05.splice(1,3,1,[1,2,3]);
+            console.log("原数组"+array04); // 12,12,4,5456,78, 在原数组之上进行操作，原数组不受任何影响，添加之后的结果就体现在原数组之上
+            console.log("添加后数组："+array05); // 12，4， 用新数组接受处理结果，新数组为删除元素
+            for (let i= 0;i<array04.length;i++);
+                console.log(array04);
+        </script>
+
+
+    </head>
+    
+    <body>
+
+
+
+
+    </body>
+
+
+
+
+
+
+</html>

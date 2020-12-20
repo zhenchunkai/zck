@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+             let array01= Array(); //只创建，但是没有初始值
+             let array02= Array(1,2,3,4,5,6,); //创建了一个数组，并且给定初始值
+             let array03= Array("仙剑"，23，true，mull)；、// 创建一个数组，
+
+            /* 
+                字面量
+             */
+            let array04 = []; //创建一个简单数组，只创建，不给初始值
+            let array05 =[1,2,3,4,5,6,]; //字面量创建数组，并给定初始值
+            let array06 =["仙剑",1,true ];// 初始值类型可以不同
+            // 查看数组
+           
+            console.log(array02);
+            console.log(array05);
+            //数组长度
+            console.log(array02 .length); //9
+            console.log(array05 .length); //9
+     
+
+            console.log(typeof(array02)); //object 对象类型
+            console.log(typeof(array05));// object 对象类型
+            // 数组遍万
+            for(let i=0; i<array02.length; i++){
+                console.log("array02["+i+"]="+array02[i]);
+            }
+            console.log("最后一个元素"+array02[array02.length-1]);//最后一个元素
+            console.log("最后一个元素"+array02[array02.length]);//越界 undefined
+            for(i in array02){
+                console.log(i)
+            }
+
+
+        </script>
+
+
+
+    </head>
+
+    <body>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+</html>
