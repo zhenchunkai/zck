@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script>
+        function getSum(){
+           // alert("adfwqde");
+            var firstNumber= document.getElementById("shu01"); // <input type="text" id="shu01">
+           /*  var firstNumber= firstNumber.value ;
+            console.log(firstNumber,typeof(firstNumber01)); // string
+            var firstNumber02= parseInt(firstNumber01); //将string转化为int，可以进行+- */
+            var realFirstNumber=parseInt (firstNumber.value);
+
+            var secondNumber= document.getElementById("shu02");
+            var realFirstNumber=parseInt(secondNumber.value);
+           
+            var he= realFirstNumber+realFirstNumber;
+            //获取展示结果的框
+            var showSum = document.getElementById("sum");
+            showSum.value=he;
+
+        }
+        
+        
+        
+
+     </script>
+        
+
+    </head>
+        
+        
+
+    <body>
+        <p>
+            我是一个没有感情的计算器
+        </p>
+        <input type="text" id="shu01">
+        <span>+</span>
+        <input type="text" id="shu02">
+        <span>=</span>
+        <input type="text"  id="sum">
+        <button onclick="getSum()">计算</button>
+        <input type="button" value="计算" onclick="getSum()">
+
+    </body>
+
+
+
+
+
+
+
+</html>

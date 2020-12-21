@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script>
+            /* 
+                局部变量，作用在局部
+            
+             */
+/* 
+            function Fun01(){
+                var name ="段誉"; // 变量，写在函数内部，作用范围就在函数内部，超出无法使用
+                console.log("name"); //段誉
+
+            }
+            Fun01();
+            console.log(name); //空白  超出范围，无法打印（输出）
+         */
+        
+            /* 
+                全局变量
+            
+             */
+        /*     var name ="段正淳"; // 在当前heml中任何位置都可以访问
+            function Funo2(){
+                console.log(name);
+            }
+            Fun02(); // 调用函数
+            console.log(name);
+ */
+
+            /* 
+            
+                全局变量 个局部变量 都有的时候
+                局部变量范围更小，越精确，优先级越高，优先使用。
+            
+            
+             */
+            
+
+            var name ="段正淳"; // 在当前heml中任何位置都可以访问
+                 function Funo2(){
+                    console.log(name);// 段誉
+            }
+            Fun02(); // 调用函数
+            console.log(name); //段正淳
+
+
+
+        </script>
+
+
+    </head>
+
+    <body>
+          
+
+
+    </body>
+
+
+
+
+</html>
