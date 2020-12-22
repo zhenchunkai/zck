@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            console.log(name);// 无法打印值，也不会报错，叫 变量的提升
+            var name="让子弹飞";
+            console.log(name);// 让子弹飞
+
+            var name;
+            console.log(name);
+            name="让子弹飞";
+            console.log(name);
+            /* 
+                函数的提升           
+             */
+            function Fun01(){
+                var get_age; // 只是声明，不给定值
+                console.log(get_age); // 空
+                get_age=18;
+                console.log(get_age);// 18
+            }
+
+            function Fun02(){
+                var get_age;
+                console.log(get_age); // undefiend
+                 var get_age=18;// 声明并给初始化变量
+                console.log(get_age);// 18
+            }
+
+        </script>
+
+    </head>
+    <body>
+        
+
+
+    </body>
+
+
+
+
+
+</html>
