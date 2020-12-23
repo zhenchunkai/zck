@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script>
+            function Fun01(){
+                console.log("Fun01...");
+
+            }
+            function Fun02(){
+                console.log("Fun02...");
+
+            }function Fun03(){
+                console.log("Fun03...");
+
+            }function Fun04(){
+                console.log("Fun04..");
+
+            }
+            function Fun05(){
+                console.log("Fun05...");
+
+            }function Fun06(){
+                console.log("Fun06...");
+
+            }
+            function FunMix(){
+               Fun01();
+               Fun02(); 
+               Fun03();
+               Fun04();
+               Fun05();
+               Fun06();
+            }
+            FunMix();
+
+
+            function Fun01(){
+                console.log("fun01被调用了");//2
+                Fun02();
+                console.log("fun01结束啦");// 6
+            }
+            function Fun02(){
+                console.log("fun02被调用了");//3
+                Fun03();
+                console.log("fun02结束啦");//5
+            }function Fun03(){
+                console.log("fun03被调用了");//4
+                
+            }
+
+            function FunMix(){
+                console.log("funmix开始了");//1
+                Fun01();
+                console.log("funmix结束啦");//7
+            }
+            FunMix();
+        </script>
+
+    </head>
+    <body>
+        
+
+
+
+
+    </body>
+
+
+
+
+
+</html>
