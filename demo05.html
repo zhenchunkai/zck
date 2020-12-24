@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+
+            /* 
+               规则：
+                1.当全局变量和局部变量同时存在，局部优先级比全局变量高，优先使用局部变量
+                2.当使用变量在定义变量之前，变量提升
+
+            
+             */
+            var name="姜文";
+            function Fun01(){
+                console.log(name);// undefiend
+                var name="张麻子";
+                console.log(name);// 张麻子
+
+            }
+            console.log(name);// 姜文
+
+
+        </script>
+
+
+    </head>
+    <body>
+        
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
