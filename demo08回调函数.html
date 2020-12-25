@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+
+            /* 
+                回调函数
+                    把函数当作参数，传入到另一个函数中，以此实现更复杂的功能
+                    把call当作参数，传入到Fun01中，实现更复杂的功能
+            
+             */
+            function Fun01(name,age,callBack){
+                var local_value="本地变量";
+                if (age<18){
+                    local_value="未成年";
+                    callBack(name,local_value);
+                }
+                else{
+                    local_value="成年了";
+                    callBack(name,local_value);
+                }
+            }
+            function callBack(name,local_value){
+                console.log(name +"："+ local_value);
+            }
+            Fun01("黄四郎",17,callBack);
+
+
+
+        </script>
+
+    </head>
+    <body>
+        
+
+
+    </body>
+
+
+
+</html>
