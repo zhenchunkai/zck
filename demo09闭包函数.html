@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>  
+       /*  function Fun01{
+            var local_value="本地变量";
+            return local_value;// 直接返回局部变量，导致破坏了局部的属性，进·而引发内存泄漏
+        }
+        let result = Fun01();
+        console.log(reslut); */
+
+            function Fun01(){
+                var local_value="本地变量";
+                function close(){// 将本地变量传出Fun01之外，但是不破坏其局部变量属性 被称为 闭包函数
+                    return local_value;
+                }
+                return close();// 直接将函数返回，达到保护局部变量范围的作用
+            }    
+            let reslut = Funo1();
+            console.log(reslut);
+            
+
+        </script>
+
+
+    </head>
+
+    <body>
+        
+
+
+    </body>
+
+
+
+</html>
