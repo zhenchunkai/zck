@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+            var cat={
+                name:"波斯猫",
+                age:1,
+                say:function(){
+                    console.log("喵喵");
+                }
+            }
+            console.log(cat,typeof(cat));
+
+            var boyOrGirlFriend={
+                name :"刘浩存",
+                age:19,
+                guangjie:function(){
+                    console.log("陪逛街");
+
+                },
+                chifan:function(){
+                    console.log("来吃饭");
+                }
+            
+
+            }
+          /*   console.log(boyOrGirlFriend); */
+
+            let name = boyOrGirlFriend.name;
+            let age = boyOrGirlFriend.age ;
+            let chifan = boyOrGirlFriend.chifan;
+            let kandianying= boyOrGirlFriend.kandianying;
+
+            console.log(name);
+            console.log(age);
+            chifan();
+        
+
+            boyOrGirlFriend.name = "周冬雨";
+            boyOrGirlFriend.age = 20;
+            console.log(boyOrGirlFriend.name);
+            console.log(boyOrGirlFriend.age);
+            boyOrGirlFriend.chifan();
+
+            for (let key in boyOrGirlFriend){
+                console.log(key );
+                console.log(boyOrGirlFriend[key ]);
+
+            }
+            // hasOwnProperty 判断对象是fu含有蒙哥属性或者函数（行为，功能）
+            console.log(boyOrGirlFriend.hasOwnProperty("guanjie"));// true
+            console.log(boyOrGirlFriend.hasOwnProperty("liantian"));// false
+
+
+        </script>
+
+
+    </head>
+
+    <body>
+        
+
+
+    </body>
+
+</html>
