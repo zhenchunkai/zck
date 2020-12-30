@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            /* 
+                通过构造函数批量创建猫
+            
+             */
+            function Cat (name , age ){
+                this.cname=name;
+                this.cage=age;
+                this.info=function (){
+                    console.log("这是"+this.cname+"今年"+ this.cage +"岁了");
+
+                }
+            }
+            var yingduan=  new Cat ("英短",3)
+            var tumao= new Cat ("中华田园猫",2);
+            console.log(yingduan);
+            console.log(tumao);
+
+            yingduan.info();
+            tumao.info();
+        </script>
+
+    </head>
+
+    <body>
+        
+
+
+
+    </body>
+</html>
