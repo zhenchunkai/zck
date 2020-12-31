@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            /* 
+                this 作为对象方法使用
+            
+            
+             */
+            var point ={
+                x:0,
+                y:0,
+                moveTo:function(newX,newY){
+                    console.log("point中的this"+ this); // [object object]
+                    console.log("初始位置" , this.x  ,this. y , "移动的量"  , newX ,this. newY  ) // 0 0  10 10
+                    this.x = this.x + newX;
+                    this.y = this.y +newY;
+                    console.log("新位置" , this.x , this.y ) 
+
+                }
+
+            }
+            point .moveTo(10,10);
+
+            var student = {
+                name : "五万",
+                play : function(where,what ){
+                    console.log(this ); // 表示当前对象 
+                    console.log(this.name ,where ,what );
+
+                }
+            }
+            student.play("鹅城", "收税");
+
+
+        </script>
+
+
+    </head>
+    <body>
+        
+
+
+
+    </body>
+
+
+</html>
