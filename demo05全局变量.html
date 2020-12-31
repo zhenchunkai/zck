@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            // 全局变量
+        /*     console.log(this); // window 当前窗口对象
+            function Fun01(){
+                console.log(this); // 当前对象本身
+
+            }
+            Fun01(); */
+            
+            function Fun02(){
+                this.name = "花姐";
+                console.log(this); // Fun02 {name："花姐"} this 表示当前对象
+
+            }
+            var huajie = new Fun02();
+
+
+        </script>
+
+    </head>
+
+    <body>
+        
+
+
+
+    </body>
+
+
+</html>
