@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            function Person(name){
+                this.pName = name ;
+
+            }
+            var wangmazi= new Person("王麻子");
+            console.log(wangmazi); // {pName:"王麻子"}
+            /* 
+                 function Person(name){
+                this.pName = name ;
+             */
+             console.log(wangmazi.constructor);
+             console.log(wangmazi.constructor.prototype.constructor); // Person 构造函数
+            console.log(Person.prototype.constructor); // Person 构造函数
+            console.log(wangmazi,_proto_); // {constructor:f} 原型对象
+
+
+
+        </script>
+
+
+    </head>
+    <body>
+        
+
+
+
+    </body>
+
+</html>
