@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <script>
+            /* 
+                String 对象
+
+                属性：length 长度
+                方法：
+                charAt(位置) 返回指定位置的值
+                indexOf(字符串) 查找字符串在父字符串中首次出现的位置
+                subString
+                split
+                toLowerCase
+                toUpperCase
+             */
+           /*  function getPasswordLength(){
+                var getELe = document.getElementById("password");
+                var pwd = getELe.value;
+                var length = pwd.length;
+                console.log(length);
+            } */
+            function test(){
+                // charAt()
+                var str = "a good man is a real man";
+                console.log(str.charAt(5)); // d
+                // indexOf
+                console.log(str.indexOf("man")); // 7
+                console.log(str.indexOf("haha")); // -1 表示没有这样的子串
+                // subString(开始位置，结束位置) 截取函数 {包含开始位置，不包含结束位置}
+                console.log(str.substring(2,6));// good
+                // split() 拆分
+                console.log(str.split(""));
+                // toLOwerCase 全部转为小写
+                console.log(str.toLowerCase());
+                // toUpperCase 全部转为大写
+                console.log(str.toUpperCase());
+
+
+                console.log(Math.round(-1.5)); // -1
+
+            }
+
+            test();
+
+
+
+        </script>
+
+
+    </head>
+
+    <body>
+       <!--  <input type="text" id="passwore"/>
+        <button onclick="getPasswordLength()" > 求密码长度</button>
+ -->
+
+    </body>
+
+</html>
