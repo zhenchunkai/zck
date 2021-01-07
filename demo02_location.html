@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <button onclick="reLoad()">重新加载</button>
+
+        <button onclick="tiaozhuan()">跳转</button>
+
+
+    </body>
+
+    <script>
+        console.log(location.hash);  //哈希     身份唯一标识
+        console.log(location.host);  //主机     localhost
+        console.log(location.hostname);  //主机名  127.0.0.1:5500
+        console.log(location.port);  //端口号   5500
+        console.log(location.href);  //链接地址   http://127.0.0.1:5500/demo02_location.html
+        console.log(location.pathname);  //路径口   /demo02_location.html
+        console.log(location.protocol);  //协议   http
+        console.log(location.search);  //搜索参数  ?name=zhangsanfeng
+
+        function reLoad(){
+            window.location.reload();   //重新加载
+        }
+        function tiaozhuan(){
+            window.location.href = "demo03_history.html"   //跳转
+        }
+
+
+    </script>
+</html>
