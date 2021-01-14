@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style>
+            #box{
+                width: 1000px;
+                height: 300px;
+                line-height: 300px;
+                font-size: 50px;
+                border: 1px solid red;
+                text-align: center;
+            }
+
+
+
+        </style>
+
+        
+
+    </head>
+    <body>
+        <div id="box">
+            5秒跳转到京东
+
+        </div>
+
+
+    </body>
+    <script>
+        var num = 5;
+        var div = document.getElementById("box");
+       /*  setInterval(() => {
+            num--;
+            div.innerHTML = num + "秒跳转到京东";
+            if (num==0){
+                window.location.href = "http://www.JD.com";
+            }
+        },1000 ); */
+
+        function fn(){
+            num-- ;
+            div.innerHTML = num + "秒跳转到京东";
+            if (num==0){
+                clearInterval(dingshiqi); //3.清楚定时器
+                window.location.href = "http://www.JD.com";
+
+            }
+        }
+        // 2. 用于接收定时器
+        dingshiqi = setInterval(fn,1000)
+    </script>
+
+
+</html>
