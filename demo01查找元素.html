@@ -1,0 +1,94 @@
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+       <!--  <p>哈哈哈</p>
+ -->
+        <div id="container">
+            <div id="box">
+                <div class="box-item">
+                    <p>段落1</p>
+                </div>
+                <div class="box-item">
+                    <p>段落2</p>
+                    <ul id="list">
+                        <li class="list-item"><a href="#">baidu</a></li>
+                        <li class="list-item"><a href="#">tencent</a></li>
+                        <li class="list-item"><a href="#">alibaba</a></li>
+                        
+                    </ul>
+                </div>
+                <input type="radio" name="cityname" value="北京">北京
+                <input type="radio" name="cityname" value="上海">上海
+
+            </div>
+
+        </div>
+
+
+
+
+    </body>
+    <script>
+      /*   document.write("呵呵呵");
+        document.write("嘿嘿嘿");*/
+        /* 
+            会覆盖掉之前内容，叫做 动态写入
+        */
+/* 
+        window.onload= function(){
+            document.write("天天");
+        }
+
+ */
+
+        /* 
+            用id选
+         */
+        var get_container = document.getElementById("container");
+        console.log(get_container);
+        /* 
+            用类名选
+         */
+         var get_box_items = document.getElementsByClassName("box-item");
+         console.log(get_box_items);
+         console.log(get_box_items[0]);
+         console.log(get_box_items[1]);
+
+        /* 
+            用标签名选
+         */
+
+        var get_eles_TN = document.getElementsByTagName("p");
+        console.log(get_eles_TN);
+        console.log(get_eles_TN[0]);
+        console.log(get_eles_TN[1]);
+
+        /* 
+            用name属性选
+         */
+        var age_eles_name= document.getElementsByTagName("cityname");
+        console.log(get_eles_name);
+        console.log(get_eles_name[0]);
+        console.log(get_eles_name[1]);
+        /* 
+            用选择器选择元素
+         */
+
+
+        var age_css_sel = document.querySelector("#list");
+        console.log(get_css_sel);
+        // 如果该选择器对应的有多个元素，querySelector查询的结果是第一个元素
+        var age_css_sel = document.querySelector("#list");
+        console.log(get_cla_sel);
+        // querySelectorAll 查询所有复合条件的元素
+        var get_cla_sel=document(".list-item");
+        console.log(get_cla_sel);
+        console.log(get_cla_sel[0]);
+        console.log(get_cla_sel[1]);
+
+    </script>
+</html>
